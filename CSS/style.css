@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --navbar-height: 59px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem   ;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px  22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#logo{
+    margin: 10px 45px;
+    position: relative;
+    animation-name: logoanimation;
+    animation-duration: 4s;
+    animation-delay: -2s;
+    animation-iteration-count: infinite;        
+}
+@keyframes logoanimation {
+
+    0%   { left:0px; top:0px;}
+    25%  {left:10px; top:0px;}
+    50%  {left:10px; top:10px;}
+    75%  {left:0px; top:10px;}
+    100% {top:0px;}
+    
+}
+
+#logo img{
+
+    width: 63px;
+    margin: 7px -4px;
+}
+
+#home{
+
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+
+    content: "";
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#home p{
+    color: white;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    margin: 3px 4px;
+    padding: 34px;
+    border-radius: 34px;
+    border: 2px solid red;
+}
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+    transition: all 1s ease-in-out .3s;
+    
+}
+#services .box img:hover{
+    
+    width: 300px;
+    height: 240px;
+    cursor: pointer;
+}
+
+.h-primary{
+    /* font-family: 'Julee', cursive; */
+    margin-top: 110px;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondry{
+    font-family: 'Julee', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 27px;
+  
+}
+.btn2{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    margin-left: 118px;
+    font-size: 1.5rem;
+    border-radius: 27px;
+    
+  
+}
+.btn2:hover{
+
+    color: black;
+    cursor: pointer;
+    
+}
+.btn:hover{
+
+    color: black;
+    cursor: pointer;
+    
+}
+.center{
+    text-align: center;
+}
+#navbar input{
+    margin-left: 600px;
+    padding: 5px;
+    padding-left: 55px;
+    border-radius: 10px;
+    
+}
+.delivery img{
+
+    width: 72px;
+    height: 68px;
+    margin-left: 22px;
+    
+}
+
